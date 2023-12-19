@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="eng-ca">
-  
   <head>
     <title>Selena</title>
     <meta charset="utf-8">
@@ -13,17 +12,18 @@
         color: #2C2252;
         /*do font-size = 20px for mobile view and switch everything to em*/
         margin-right: 74px;
-      }
-      
-			p {
+        
         font-family: Arial, Trebuchet MS;
         font-size: 20px;
+      }
+      
+      p {
         width: 45%;
         margin-left: 74px;
       }
       
       h1 {
-        font-family: Arial Black, Trebuchet MS;
+        font-family: Arial Black, Arial, Trebuchet MS;
         font-size: 4.5vw;
         margin-left: 64px;
         
@@ -43,6 +43,7 @@
         position: fixed;
         top: 0px;
         left: 10px;
+        overflow: hidden;
       }
       
       #sidebar h1 {
@@ -50,25 +51,32 @@
         font-size: 1.5vw;
         color: #FF8EFA; 
         margin-left: 20%;
-        text-align: centre;
+        margin-top: 40px;
       }
       
       #sidebar ul {
         list-style-type: none;
-      }
-      
-      #sidebar li {
-        text-align: centre;
-        width: 100%;
-        background-color: grey;
+        margin-left: -40px;
       }
       
       #sidebar a {
-        background-color: blue;
-        color: red;
-        width: 50px;
-        height: 50px;
+        display: block;
+        padding: 20px 0px;
         
+        font-family: Courier, Arial;
+        font-size: 1em;
+        color: #8EFFF1;
+        text-decoration: none;
+        text-align: center;
+      }
+      
+      #sidebar a:hover {
+        border: 1px dashed;
+        border-color: #FF8EFA;
+        padding: 19px 0px;
+        
+        color: #FF8EFA;
+        text-transform: uppercase;
       }
       
       .img-portrait {
@@ -76,9 +84,8 @@
         border-radius: 50%;
         position: relative;
         left: 20%;
-        margin-top: 20px;
+        margin-top: 50px;
       }
-      
       
     </style>
   </head>
@@ -91,55 +98,45 @@
       <h1>Table of Contents:</h1>
       <div>
         <ul>
-          <li><a href="#introduction">introduction</a></li>
+          <li><a href="#intro"> introduction </a></li>
           <li><a href="#about-me">about me</a></li>
           <li><a href="#artwork">artwork</a></li>
           <li><a href="#photography">photography</a></li>
-          <li><a href="#contact-me">contact me</a></li>
+          <li><a href="#C4">Jump to Chapter 4</a></li>
         </ul>
       </div>  
     </div>
     
-		<div id="introduction" class="section">
-      <h1>
-        NYOB ZOO!
-      </h1>
+		<div class="section">
+      <h1 id="intro">NYOB ZOO!</h1>
       <p>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
     </div>
     
-    <div id="about-me" class="section">
-      <h1>
-        about me.
-      </h1>
+    <div class="section">
+      <h1> <a name="about-me">about me.</a> </h1>
       <p>
         test 2
       </p>
     </div>
     
-    <div id="artwork" class="section">
-      <h1>
-        artwork.
-      </h1>
+    <div class="section">
+      <h1> <a name="artwork">artwork.</a> </h1>
       <p>
         test 2
       </p>
     </div>
     
-    <div id="photography" class="section">
-      <h1>
-        photography.
-      </h1>
+    <div class="section">
+      <h1> <a name="photography">photography.</a> </h1>
       <p>
         test 2
       </p>
     </div>
     
-    <div id="contact-me" class="section">
-      <h1>
-        contact me.
-      </h1>
+    <div id="C4" class="section">
+      <h1> p </h1>
       <p>
         test 2
       </p>
