@@ -3,24 +3,38 @@
   
   <head>
     <title>Selena</title>
-    <meta charset="utc-8">
+    <meta charset="utf-8">
+    <meta name="author" content="Selena Avril Lee">
+    <meta name="viewport" content="width=device-width, initial-sale=1.0">
+    
     <style>
-      
       body {
         background-color: #F5EBEF;
         color: #2C2252;
+        /*do font-size = 20px for mobile view and switch everything to em*/
+        margin-right: 74px;
       }
       
 			p {
         font-family: Arial, Trebuchet MS;
         font-size: 20px;
-        text-indent: 74px;
+        width: 45%;
+        margin-left: 74px;
       }
       
       h1 {
         font-family: Arial Black, Trebuchet MS;
         font-size: 74px;
-        text-indent: 64px;
+        margin-left: 64px;
+        
+      }
+      
+      h2 {
+        font-family: Courier New, Trebuchet MS;
+        font-size: 24px;
+        color: #FF8EFA; 
+        margin-left: 20%;
+        text-align: centre;
       }
       
       .section {
@@ -30,13 +44,13 @@
       }
       
       #menu {
-      	background-color: #2C2252;
+      	display: block;
+        background-color: #2C2252;
         width: 25%;
       	height: 100%;
         position: fixed;
-        top: 0;
-        left: 0;
-        
+        top: 0px;
+        left: 10px;
       }
       
       .img-portrait {
@@ -47,6 +61,7 @@
         margin-top: 20px;
       }
       
+      
     </style>
   </head>
   
@@ -55,25 +70,59 @@
   <body>
     <div id="menu">
       <img src="me.JPG" alt="my face" class="img-portrait">
+      <h2>Table of Contents:</h2>
+      <ul>
+        <li><a href="#One">One</a></li>
+        <li><a href="#Two">Two</a></li>
+        <li><a href="#Three">Three</a></li>
+        <li><a href="#Four">Four</a></li>
+      </ul>
     </div>
     
-    
-		<div class="section">
+		<div id="introduction" class="section">
       <h1>
         NYOB ZOO!
       </h1>
       <p>
-        test
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       </p>
     </div>
     
-    <div class="section">
+    <div id="about me" class="section">
       <h1>
-        test 2
+        about me.
       </h1>
       <p>
         test 2
       </p>
     </div>
+    
+    <div id="artwork" class="section">
+      <h1>
+        artwork.
+      </h1>
+      <p>
+        test 2
+      </p>
+    </div>
+    
+    <div id="photography" class="section">
+      <h1>
+        photography.
+      </h1>
+      <p>
+        test 2
+      </p>
+    </div>
+    
+    <div id="contact me" class="section">
+      <h1>
+        contact me.
+      </h1>
+      <p>
+        test 2
+      </p>
+    </div>
+    
   </body>
 </html>
