@@ -32,7 +32,14 @@
         height: auto;
         position: relative;
         left: 30%;
-        padding: 100px 20px;
+  
+        border: solid;
+      }
+      
+      div.img-display {
+        overflow: auto;
+        white-space: nowrap;
+        padding: 20px;
       }
       
       #sidebar {
@@ -89,11 +96,24 @@
         border-color: #F5EBEF;
       }
       
+      #artwork img {
+        width: auto;
+        height: 50vw;
+        display: inline;
+      }
+      
+      #photography img {
+				width: auto;
+        height: 20vw;
+        display: inline;
+      }   
+      
       #contact-me img {
         width: auto;
         height: 6vw;
         float: left;
         margin-left: 20%;
+        margin-bottom: 100px;
       }
       
     </style>
@@ -119,6 +139,8 @@
       </p>
     </div>
     
+    <br>
+    
     <div id="about-me" class="section">
       <h1>about me.</h1>
 			<p>
@@ -126,35 +148,62 @@
       </p>
     </div>
     
+    <br>
+    
     <div id="artwork" class="section">
       <h1>artwork.</h1>
+      <div class="img-display">
+        <img src="artwork-1.jpg" alt="fairy illustration">
+        <img src="artwork-2.PNG" alt="birthday card illustration">
+        <img src="artwork-4.JPG" alt="minecraft skin">
+        <img src="artwork-3.jpg" alt="mural">
+      </div>
+
     </div>
+    
+    <br>
     
     <div id="photography" class="section">
       <h1>photography.</h1>
+      <img src="photography-1.PNG" alt="">
+      <img src="photography-2.JPEG" alt="">
+      <img src="photography-3.JPEG" alt="">
+      <img src="photography-4.jpg" alt="">
+      <img src="photography-5.jpg" alt="">
+      <img src="photography-6.jpg" alt="">
+      <img src="photography-7.jpg" alt="">
     </div>
+    
     
     <div id="contact-me" class="section">
       <h1>contact me.</h1>
 			
+      <!--
+      	The following images belong to uxwing.com, and are permitted to be
+				used in personal, commerical, and client projects.
+        Author: uxwing.com
+        Date retrieved: Dec. 19, 2023
+      -->
+      
+      <!-- uxwing.com icons start-->
       <a href="https://www.linkedin.com/in/selena-lee-402bb5245/?originalSubdomain=ca" 
          target="_blank">
          <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-square-icon.png" 
            alt="indeed"> 
       </a>
       
-     <a href="https://www.instagram.com/sel._.lee/?hl=en" 
+      <a href="https://www.instagram.com/sel._.lee/?hl=en" 
          target="_blank">
       <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png" 
            alt="instagram">
-     </a>
-  
-     <a href="mailto:sa4lee@uwaterloo.ca"
+      </a>
+      
+      <a href="mailto:sa4lee@uwaterloo.ca"
          target="_blank">
-      <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/envelope-line-icon.png" 
+        <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/envelope-line-icon.png" 
            alt="email">
-       </a>
-
+      </a>
+      <!-- uxwing.com icons end-->
     </div>
   </body>
 </html>
