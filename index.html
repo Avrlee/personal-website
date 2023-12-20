@@ -45,23 +45,35 @@
       }
       
       table, th, td {
-        font-size: 3vw;
-        border: 1px solid;
-        border-collapse: collapse;
+        width: 100%;
+        height: auto;
         
+        font-size: 3vw;
+        border: 1px dashed;
+        border-collapse: collapse; 
       }
       
-      tr:nth-child(even) {
-        background-color: pink;
+      table {
+      	position: relative;
+        left: 7%;
       }
       
-      th {
+    	th {
+        width: 30%;
+        padding: 10px;
+        
         background-color: #2C2252;
-        color: white;
+        color: #FF8EFA;
+        border-color: #FF8EFA;
+      }
+      
+      tr:nth-child(even) th {
+        color: #8EFFF1;
+        border-color: #8EFFF1;
       }
       
       td {
-        background-color: ;
+				text-indent: 5%;
       }
       
       #sidebar {
@@ -192,7 +204,7 @@
       <table>
         <tr>
           <th>Name</th>
-          <td>Selena</td>
+          <td>Selena Lee</td>
         </tr>
         <tr>
           <th>Age</th>
