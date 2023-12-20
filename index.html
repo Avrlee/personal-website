@@ -32,14 +32,13 @@
         height: auto;
         position: relative;
         left: 30%;
-  
-        border: solid;
       }
       
       div.img-display {
-        overflow: auto;
+        overflow: scroll;
         white-space: nowrap;
-        padding: 20px;
+        background-color: #2C2252;
+        border-radius: 3%;
       }
       
       #sidebar {
@@ -96,17 +95,18 @@
         border-color: #F5EBEF;
       }
       
-      #artwork img {
+      img.resizeH {
         width: auto;
         height: 50vw;
-        display: inline;
+        padding: 20px;
       }
       
-      #photography img {
-				width: auto;
-        height: 20vw;
-        display: inline;
-      }   
+      img.resizeW {
+        width: 55vw;
+        height: auto;
+        padding: 20px;
+      }
+      
       
       #contact-me img {
         width: auto;
@@ -153,10 +153,14 @@
     <div id="artwork" class="section">
       <h1>artwork.</h1>
       <div class="img-display">
-        <img src="artwork-1.jpg" alt="fairy illustration">
-        <img src="artwork-2.PNG" alt="birthday card illustration">
-        <img src="artwork-4.JPG" alt="minecraft skin">
-        <img src="artwork-3.jpg" alt="mural">
+        <img src="artwork-1.jpg" alt="fairy illustration"
+             class="resizeH">
+        <img src="artwork-2.PNG" alt="birthday card illustration"
+             class="resizeH">
+        <img src="artwork-4.JPG" alt="minecraft skin"
+             class="resizeH">
+        <img src="artwork-3.jpg" alt="mural" style="width:55vw; height:auto"
+             class="resizeW">
       </div>
 
     </div>
@@ -165,13 +169,23 @@
     
     <div id="photography" class="section">
       <h1>photography.</h1>
-      <img src="photography-1.PNG" alt="">
-      <img src="photography-2.JPEG" alt="">
-      <img src="photography-3.JPEG" alt="">
-      <img src="photography-4.jpg" alt="">
-      <img src="photography-5.jpg" alt="">
-      <img src="photography-6.jpg" alt="">
-      <img src="photography-7.jpg" alt="">
+      <div class="img-display">
+        <img src="photography-1.PNG" alt="poster"
+             class="resizeW">
+        <img src="photography-2.JPEG" alt="poster"
+             class="resizeH">
+        <img src="photography-3.JPEG" alt="poster"
+             class="resizeW">
+        <img src="photography-4.jpg" alt="chicken"
+             class="resizeH">
+        <img src="photography-5.jpg" alt="stone statue"
+             class="resizeH">
+        <img src="photography-6.jpg" alt="pepsi"
+             class="resizeW">
+        <img src="photography-7.jpg" alt="fair"
+             class="resizeW">
+      </div>
+
     </div>
     
     
